@@ -10,7 +10,7 @@ const Pokemon = db.define('Pokemon', {
     },
     name: {
         type: DataTypes.STRING,
-        
+        allowNull: false,
     },
     image: {
         type: DataTypes.STRING,
