@@ -9,7 +9,7 @@ class Server {
         this.app = express()
         this.port = process.env.PORT || 3000
         this.paths = {
-            pokemon: 'api/v1/pokemon'
+            pokemon: '/api/v1/pokemons'
         }
         this.database()
         this.middlewares()

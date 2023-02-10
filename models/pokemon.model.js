@@ -14,7 +14,12 @@ const Pokemon = db.define('Pokemon', {
     },
     image: {
         type: DataTypes.STRING,
-        allowNull: true,
+        allowNull: true
+    },
+    status: {
+        type: DataTypes.STRING,
+        defaultValue: 'available',
+        allowNull: false,
     }
 })
 module.exports = Pokemon;
